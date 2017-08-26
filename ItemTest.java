@@ -28,4 +28,21 @@ public class ItemTest {
   public void canGetName(){
     assertEquals("toothpaste", item1.getName());
   }
+
+  @Test
+  public void canGetPrice(){
+    assertEquals(2.00, item6.getPrice(), 0.01);
+  }
+
+  @Test
+  public void canSetName(){
+    item5.setName("orange");
+    assertEquals("orange", item5.getName());
+  }
+
+  @Test
+  public void canSetPrice(){
+    item8.setPrice(20.00);
+    assertEquals(20.00, item8.getPrice(), 0.01);
+  }
 }
