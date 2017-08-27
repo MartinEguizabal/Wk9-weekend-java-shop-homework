@@ -30,4 +30,32 @@ public class CustomerTest {
     customer2 = new Customer(false);
     customer3 = new Customer(false);
   }
+
+  @Test
+  public void canGetLoyalty(){
+    assertEquals(true, customer1.getLoyalty());
+  }
+
+  @Test
+  public void canGetLoyalty__false(){
+    assertEquals(false, customer3.getLoyalty());
+  }
+
+  @Test
+  public void canSetLoyalty(){
+    customer2.setLoyalty(true);
+    assertEquals(true, customer2.getLoyalty());
+  }
+
+  @Test
+  public void canCheckIfBasketEmpty(){
+    assertEquals(true, customer3.checkIfBasketEmpty());
+  }
+
+  // @Test
+  // public void canAddToBasket(){
+  //   customer3.addToBasket(item2, 1);
+  //   assertEquals
+  // }
+
 }
