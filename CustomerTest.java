@@ -48,8 +48,8 @@ public class CustomerTest {
   }
 
   @Test
-  public void canCheckIfBasketEmpty(){
-    assertEquals(true, customer3.checkIfBasketEmpty());
+  public void canCountBasket__startAtZero(){
+    assertEquals(0, customer2.countBasket());
   }
 
   // @Test

@@ -24,13 +24,9 @@ public class Customer {
     return this.basket;
   }
 
-  public boolean checkIfBasketEmpty(){
-    return this.basket.isEmpty();
+  public int countBasket(){
+    return this.basket.size();
   }
-
-  // public int countBasket(){
-
-  // }
 
   // public void addToBasket(Item key, Integer amount){
   //   this.basket.put(key, amount);
